@@ -14,14 +14,33 @@
         }
 
         body {
-        background: linear-gradient(270deg, #0dbb78, #feb47b);
-        background-size: 400% 400%;
-        animation: gradient 5s ease infinite;
+            background: linear-gradient(270deg, #0dbb78, #feb47b);
+            background-size: 400% 400%;
+            animation: gradient 5s ease infinite;
             }
+        .switch {
+            width: 100px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            }
+
+        .switch.active {
+            transform: translateX(24px); /* Geser posisi tombol */
+            }
+
 
     </style>
 </head>
 <html>
     <h1>test</h1>
-    <body center>good morning</body>
+    <body>
+        Good morning
+        <div class="switch-container">
+            <img src="assets/switch.svg" alt="Switch" class="switch" id="switch">
+    </body>
+    <script>
+        document.getElementById('switch').addEventListener('click', function() {
+        this.classList.toggle('active');
+      });
+      </script>
 </html>
