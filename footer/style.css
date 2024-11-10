@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Applies box-sizing to all elements for consistent padding and border treatment */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Fixes footer to the bottom with full-width display */
+}
+
+.footer {
+    background-color: #333;
+    color: #f5f5f5;
+    width: 100%;
+    text-align: left;
+    padding: 50px; /* Adds space around content */
+    margin-top: 80px;
+    box-sizing: border-box; /* Ensures padding is included in the width and height */
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%; /* Allocates 30% width to each section in the footer */
+}
+
+.footer .footer-left {
+    width: 30%; /* Ensures the left section is 30% wide */
+}
+
+.footer h3 {
+    color: #f5f5f5;
+    margin: 0;
+    padding-bottom: 20px; /* Adds spacing below the heading */
+}
+
+.footer .footer-left .credit-cards img {
+    width: 75px; /* Sets a fixed width for SVG images */
+    height: auto; /* Maintains aspect ratio */
+    margin-right: 10px; /* Adds spacing between icons */
+    vertical-align: middle; /* Aligns images vertically in the middle */
+}
+
+.footer .credit-cards {
+    margin: 20px 0; /* Adds vertical spacing around credit card icons */
+}
+
+.footer .footer-left .credit-cards img {
+    margin-right: 10px; /* Adds spacing between credit card icons */
+}
+
+.footer .footer-copyright {
+    color: #8f9692;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0 0 0; /* Adds top margin */
+}
+
+.footer .footer-center i {
+    background-color: #6C7A89;
+    color: #fff;
+    font-size: 25px; /* Sets icon size */
+    width: 38px;
+    height: 38px;
+    border-radius: 50%; /* Makes icons circular */
+    text-align: center;
+    line-height: 38px; /* Centers icon text vertically */
+    margin: 0 15px 30px 0; /* Adds spacing around icons */
+    vertical-align: middle;
+}
+
+.footer .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0 0 30px 0; /* Adds bottom margin for spacing */
+}
+
+.footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px; /* Sets smaller font size for additional info */
+    line-height: 2;
+}
+
+.footer .footer-center p a {
+    color: rgb(99, 219, 179); /* Sets link color */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.footer .footer-right .footer-about {
+    line-height: 1.6;
+    color: #92999f;
+    font-size: 13px; /* Sets smaller font size */
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer .footer-right .footer-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px; /* Makes section title larger */
+    font-weight: bold;
+    margin-bottom: 20px; /* Adds space below the section title */
+}
+
+.footer .footer-media {
+    display: flex; /* Aligns icons in a horizontal row */
+    gap: 25px; /* Adds space between icons */
+    justify-content: start; /* Aligns icons to the left */
+}
+
+.footer .footer-media a {
+    text-decoration: none; /* Removes underline from icons */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    width: 50px;
+    height: 50px; /* Sets fixed size for social media icons */
+    cursor: pointer;
+    background-color: #33383b; /* Sets background color */
+    border-radius: 50%; /* Makes icons circular */
+    font-size: 20px; /* Sets font size for icons */
+    color: #fff;
+    margin-right: 25px; /* Adds right spacing */
+    margin-bottom: 5px; /* Adds bottom margin */
+    margin-top: 25px; /* Adds top margin */
+}
+
+.footer .footer-media a:hover {
+    background-color: rgb(0, 122, 82); /* Changes background color on hover */
+}
+
+/* Media Queries */
+@media (max-height: 800px) {
+    footer {
+        position: static; /* Changes footer positioning for smaller screens */
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 880px) {
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+        display: block;
+        width: 100%; /* Adjusts footer sections to full width for smaller screens */
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .footer .footer-center i {
+        margin-left: 0; /* Adjusts icon alignment for smaller screens */
+    }
+}
